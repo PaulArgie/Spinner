@@ -1,0 +1,218 @@
+
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.One {
+  width: 100px;
+  height: 600px;
+  background: red;
+  position: absolute;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 500px;
+  animation: spinnerOne 1ms infinite;
+}
+@keyframes spinnerOne {
+  30%{
+    transform: rotate(-45deg);
+  }
+  60%{
+    transform: rotate(360deg);
+  }
+}
+
+.Two {
+  width: 600px;
+  height: 100px;
+  background: blue;
+  position: absolute;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 500px;
+  animation: spinnerTwo 1ms infinite;
+}
+@keyframes spinnerTwo {
+  30%{
+    transform: rotate(45deg);
+  }
+  60%{
+    transform: rotate(-360deg);
+  }
+}
+.Three {
+  width: 100px;
+  height: 600px;
+  background: green;
+  position: absolute;
+  border-top-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+  transform: rotate(-45deg);
+  animation: spinnerThree 1ms infinite;
+}
+@keyframes spinnerThree {
+  30%{
+    transform: rotate(90deg);
+  }
+  60%{
+    transform: rotate(-405deg);
+  }
+}
+
+.Four {
+  width: 100px;
+  height: 600px;
+  background: purple;
+  position: absolute;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 500px;
+  transform: rotate(45deg);
+  animation: spinnerFour 1ms infinite;
+}
+@keyframes spinnerFour {
+  30%{
+    transform: rotate(-90deg);
+  }
+  60%{
+    transform: rotate(405deg);
+  }
+}
+
+.circles:hover{
+  background: lightblue;
+}
+:hover{
+  background: black;
+}
+.cEight:hover{
+  background: white;
+}
+
+
+.circles {
+  background: black;
+  width: 350px;
+  height: 350px;
+  border-radius: 500px;
+  position: absolute;
+  box-shadow: 0 0 15px white;
+  animation: spin 9ms infinite;
+}
+
+
+.cOne {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  top: 10px;
+  left: 95px;
+}
+.cTwo {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  top: 180px;
+  left: 95px;
+}
+.cThree {
+  background: lightblue;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+.cFour {
+  background: lightblue;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  top: 170px;
+  left: 140px;
+}
+
+@keyframes spin {
+  20%{
+    transform: rotate(-360deg);
+  }
+  60%{
+    transform: rotate(180deg);
+  }
+}
+
+.center {
+  justify-content: center;
+  background: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  box-shadow: 0 0 15px black;
+  animation: Yaxis 6s infinite;
+}
+@keyframes Yaxis {
+  20%{
+    transform: rotate(-90deg);
+  }
+  60%{
+    transform: rotate(360deg);
+  }
+}
+
+.cFive {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  left: 350px;
+  
+}
+.cSix {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  right: 350px;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: Xaxis 4s infinite;
+}
+@keyframes Xaxis {
+  20%{
+    transform: rotate(90deg);
+  }
+  60%{
+    transform: rotate(-360deg);
+  }
+}
+.cSeven {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  top: 350px;
+}
+.cEight {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 500px;
+  position: absolute;
+  bottom: 350px;
+}
